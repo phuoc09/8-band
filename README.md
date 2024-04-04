@@ -1,4 +1,4 @@
-File frequency_field: vẽ phổ trong miền tần số của file wave
+File frequency_field: vẽ phổ trong miền tần số của file wav
 
 File fir_lpf : bộ lọc thông thấp, đầu ra là 1 file nhạc sau khi lọc
 
