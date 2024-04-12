@@ -5,11 +5,8 @@ def binary_array_to_decimal(array):
     for binary_str in array:
         # Kiểm tra bit dấu
         if binary_str[0] == '1':
-            # Trường hợp số âm: áp dụng biểu diễn bù hai
-            # Đảo bit (bitwise NOT)
-            complement = ''.join('1' if bit == '0' else '0' for bit in binary_str)
-            # Chuyển thành số nguyên và cộng 1
-            decimal = -(int(complement, 2) + 1)
+            modified_binary_str = '0' + binary_str[1:]
+            decimal = -(int(modified_binary_str, 2))
         else:
             # Trường hợp số dương: chuyển trực tiếp sang số nguyên
             decimal = int(binary_str, 2)
